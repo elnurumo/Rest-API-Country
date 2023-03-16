@@ -8,11 +8,21 @@ const searchIcon = document.querySelector(".search-icon")
 const filterDropdown = document.querySelector(".filter-dropdown")
 const button = document.querySelector(".backToHomePage")
 const border = document.querySelectorAll(".border")
-
-
+const modeDarkOrLight = document.querySelector(".modeDarkOrLight")
+const moon = document.querySelector(".fa-moon")
+const sun = document.querySelector(".fa-sun")
 
 let get = true
 changeMode.addEventListener("click", () => {
+    if (modeDarkOrLight.textContent == "Light Mode" && sun.style.display == "inline") {
+        modeDarkOrLight.textContent = "Dark Mode"
+        sun.style.display = "none"
+        moon.style.display = "inline"
+    }else {
+        modeDarkOrLight.textContent = "Light Mode"
+        sun.style.display = "inline"
+        moon.style.display = "none"
+    }
     if (get) {
         const all = document.querySelectorAll(".my-css-card");
         boolean = true

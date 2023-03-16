@@ -6,6 +6,9 @@ const header = document.querySelector("header")
 // const headerDetail =document.querySelector(".header_area")
 const searchIcon = document.querySelector(".search-icon")
 const filterDropdown = document.querySelector(".filter-dropdown")
+const modeDarkOrLight = document.querySelector(".modeDarkOrLight")
+const moon = document.querySelector(".fa-moon")
+const sun = document.querySelector(".fa-sun")
 
 const API_URL = "https://restcountries.com/v3.1/all"
 
@@ -13,9 +16,15 @@ let boolean = false
 
 
 let get = false
+if (boolean) {
+    cardArea.innerHTML = `<img style="justify-content:center; align-items:center; width: 10rem;" src="./img/blackSearch.gif">`
+}else {
+    cardArea.innerHTML = `<img style="justify-content:center; align-items:center; width: 10rem;"  src="./img/Search.gif">`
+}
 fetch(API_URL)
     .then((res) => res.json())
     .then((data) => {
+        cardArea.innerHTML = ""
         data.forEach(element => {
             cardArea.innerHTML +=
                 `
@@ -70,6 +79,15 @@ searchInput.addEventListener("keyup", () => {
 })
 
 changeMode.addEventListener("click", () => {
+    if (modeDarkOrLight.textContent == "Light Mode" && sun.style.display == "inline") {
+        modeDarkOrLight.textContent = "Dark Mode"
+        sun.style.display = "none"
+        moon.style.display = "inline"
+    }else {
+        modeDarkOrLight.textContent = "Light Mode"
+        sun.style.display = "inline"
+        moon.style.display = "none"
+    }
     if (get) {
         const all = document.querySelectorAll(".my-css-card");
         boolean = true
