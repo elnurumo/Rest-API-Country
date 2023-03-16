@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Country Details</title>
+</head>
+
+<body>
+    <header class="py-3 header_area">
+        <div class="container h-100">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 col-md-4 col-sm-6">
+                    <a class="navbar-brand fw-bold page-name" href="./index.html">Where in the world?</a>
+                </div>
+                <div class="col-lg-6 col-md-4 col-sm-6 d-flex justify-content-end align-items-center mode_area">
+                    <i class="fa-regular fa-moon mode-icon mx-3"></i>
+                    <p class="my-0 modeDarkOrLight">Dark Mode</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="details-page-main">
+        <section class="back-to-homePage-area container">
+            <div class="row">
+                <a href="./index.html">
+                    <button class="backToHomePage btn btn-light col-2">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>Back</span>
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section class="detail-flag-and-countryAbout container">
+            <div class="row justify-content-between">
+                <div style="width: 400px;" class="col-lg-6">
+                    <img width="100%" src="https://flagcdn.com/w320/pf.png" alt="flag">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="country-Name">Belgium</h1>
+                    <div class="ulList-area">
+                        <ul class="ulDetail">
+                            <li><strong>Native Name:</strong> België</li>
+                            <li><strong>Population:</strong> 11,319,511</li>
+                            <li><strong>Region:</strong> Europe</li>
+                            <li><strong>Sub Region:</strong> Western Europe</li>
+                            <li><strong>Capital:</strong> Brussels</li>
+                        </ul>
+                        
+                        <ul class="ulDetail">
+                            <li><strong>Top Level Domain:</strong> .be</li>
+                            <li><strong>Currencies:</strong> Euro</li>
+                            <li><strong>Languages:</strong> Dutch, French, German</li>
+                        </ul>
+                    </div>
+                    <div class="border-area">
+                        <strong>Border Countries: </strong>
+                        <ul class="d-flex gap-1 borderUl">
+                            <li class="border btn">France</li>
+                            <li class="border btn">Germany</li>
+                            <li class="border btn">Netharlands</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./details.js"></script>
+</body>
+</html>

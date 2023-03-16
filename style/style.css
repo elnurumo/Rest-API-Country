@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 10px;
+}
+
+/* Header Area */
+.header_area {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.page-name {
+    font-size: 2.4rem;
+}
+
+.modeDarkOrLight {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.mode-icon {
+    margin-top: 1px;
+    font-size: 1.6rem;
+}
+
+.mode_area {
+    cursor: pointer;
+}
+
+/* Main Area */
+/* Search and Filter */
+
+.main_area {
+    margin-top: 5rem;
+}
+
+.search-input {
+    width: 400px;
+    padding: 2rem 6rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search_area {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    z-index: 10;
+    left: 34px;
+    top: 24px;
+    font-size: 1.6rem;
+    color: gray;
+}
+
+.search-input::-ms-clear {
+    width: 0;
+    height: 0;
+}
+
+.filter-dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    padding: 1.5rem 2.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    font-weight: 400;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Country Card Area */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.country_card_area {
+    margin-top: 5rem;
+}
+
+.country-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.country_abouts {
+    list-style-type: none;
+    padding: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.my-css-card {
+    max-height: 336px;
+    height: 100%;
+    border: 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+
+.images {
+    max-height: 160px;
+    height: 100%;
+}
+
+.modeDark {
+    color: white;
+    background-color: #2B3844;
+}
+
+.modeDark::-webkit-input-placeholder {
+    color: white;
+}
+
+.mainDark {
+    color: white;
+    background-color: #202C36;
+}
+
+
+
+@media (max-width: 576px) {
+    .search-input {
+        padding: 2rem 5rem;
+    }
+}
+
+
+/* Detail Page */
+
+.details-page-main {
+    margin-top: 5rem;
+}
+
+.backToHomePage {
+    border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.detail-flag-and-countryAbout {
+    margin-top: 5rem;
+}
+
+.country-Name {
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 44px;
+}
+
+.ulDetail {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ulList-area {
+    display: flex;
+    gap: 10rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.border-area {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.borderUl .border {
+    margin-left: 0.5rem;
+    padding: 0.3rem 2rem;
+}
+
+@media (max-width: 576px) {
+    .ulList-area {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .border-area {
+        flex-direction: column;
+        margin: 1rem 0;
+        gap: 1rem;
+    }
+
+    .country-name {
+        margin: 1rem 0;
+    }
+    .backToHomePage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        text-align: center;
+        padding: 0.5rem 4rem;
+        margin: 1rem;
+    }
+}
